@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <!-- PAGE INFO -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema</title>
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="assets/style.css" />
+
+    <!--  SWIPER -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- SYLES -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- CABEÇARIO -->
+
+    <header id="header">
+      <nav class="container">
+        <a class="logo" href="#home">Dicky <span>Store</span></a>
+        <div class="menu">
+          <ul class="grid">
+            <li><a class="title" href="#home">Início</a></li>
+            <li><a class="title" href="#testimonials">Marcas</a></li>
+            <li><a class="title" href="#services">Produtos</a></li>
+            <li><a class="title" href="#about">Sobre nós</a></li>
+            <li><a class="title" href="#contact">Contato</a></li>
+          </ul>
+        </div>
+        <!-- toggle -->
+
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-close"></div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HOME -->
+      <section class="section" id="home">
+        <div class="container grid">
+          <div class="image">
+            <img src="./images/logo.png" alt="logo-loja" />
+          </div>
+
+          <div class="text">
+            <h2 class="title">Roupas para seu estilo</h2>
+            <p>Use seu estilo e vista o que gosta, com conforto.</p>
+            <a class="button" href="#services">Compre aqui</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- BARRA 1 -->
+      <div class="divider-1"></div>
+
+      <!-- BOX ROLL -->
+      <section class="section" id="testimonials">
+        <div class="container">
+          <header>
+            <h2 class="title">Marcas disponíveis aqui</h2>
+          </header>
+          <div class="testimonials swiper-container">
+            <div class="swiper-wrapper">
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <cite>
+                    <img
+                      src="/ProjFront/images/lacoste-logo.png"
+                      alt="Camisas"
+                    />
+                  </cite>
+
+                  <p>
+                    <span>&ldquo;</span>
+                    Lacoste é uma empresa de vestuário de luxo fundada em 1933
+                    por René Lacoste, um tenista apelidado de "Le Crocodile" por
+                    causa de uma aposta que valia uma mala de pele de crocodilo.
+                  </p>
+                </blockquote>
+              </div>
+
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <cite>
+                    <img src="/ProjFront/images/tommy-logo.png" alt="Camisas" />
+                  </cite>
+                  <p>
+                    <span>&ldquo;</span>
+                    Tommy Hilfiger uma marca que oferece estilo, qualidade e
+                    conforto para consumidores em todo o mundo.
+                  </p>
+                </blockquote>
+              </div>
+
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <cite>
+                    <img
+                      src="/ProjFront/images/oakley-logo.png"
+                      alt="Camisas"
+                    />
+                  </cite>
+                  <p>
+                    <span>&ldquo;</span>
+                    A Oakley foi iniciada em 1975 por Jim Jannard em sua
+                    garagem, com um investimento inicial de U$300. Jannard
+                    inicialmente vendia em eventos de motocross o que ele
+                    chamava de "The Oakley Grip".
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BARRA 2 -->
+      <div class="divider-2"></div>
+
+      <!-- PRODUTS -->
+      <section class="section" id="services">
+        <div class="container grid">
+          <header>
+            <h2 class="title">Produtos</h2>
+            <p>
+              Os produtos
+              <strong>Dicky Store</strong> tem a melhor qualidade para conforto
+              do cliente, com um preço que cabe no seu bolso.
+            </p>
+          </header>
+          <div class="cards grid">
+            <div class="card bones">
+              <i class="icon-icon-cap"></i>
+              <h3 class="title">Bonés</h3>
+              <p>
+                Bonés do tipo premium, com o material 100% algodão em primeira
+                linha, com a aba curva e a traseira com fecho de metal ou
+                plástico (refletivo).
+              </p>
+            </div>
+
+            <div class="card">
+              <i class="icon-shirt"></i>
+              <h3 class="title">Camisas</h3>
+              <p>
+                A camiseta refere-se a uma malha 100% algodão com espessura 30.1
+                e 40.1. Possui excelente qualidade, durabilidade e conforto.
+              </p>
+            </div>
+            <!-- <div class="card">
+              <i class="icon-icon-colar"></i>
+              <h3 class="title">Colares</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Commodi quod enim ex omnis ullam odio tempora nobis unde.
+              </p>
+            </div> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- BARRA 3 -->
+      <div class="divider-1"></div>
+
+      <!-- ABOUT -->
+      <section class="section" id="about">
+        <div class="container grid">
+          <div class="image">
+            <img
+              src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2hpcnRzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+              alt="Roupas"
+            />
+          </div>
+
+          <div class="text">
+            <h2 class="title">Sobre nós</h2>
+            <p>
+              A DickStory chegou pra valorizar o estilo MEC. No ano de 2021 três
+              amigos tiveram a ideia de valorizar o estilo largado, trazendo
+              assim peças de qualidade e acessível a nossa comunidade e voltando
+              a era raiz.
+            </p>
+            <br />
+            <p>
+              “Amigos, amigos, negócios à parte em? É possível fazer a melhor
+              parceria que existe e dar certo do nosso estilo. Tudo depende da
+              maneira que vamos seguir, organizar e manter com o respeito e a
+              humildade e sempre seguir pelo certo”
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- BARRA 4 -->
+      <div class="divider-2"></div>
+
+      <!-- CONTATS -->
+      <section class="section" id="contact">
+        <div class="container grid">
+          <div class="text">
+            <h2 class="title">Entre em contato com a gente!</h2>
+            <p>
+              Entre em contato com a Dicky Store, queremos tirar suas dúvidas,
+              ouvir suas críticas e sugestões.
+            </p>
+            <a
+              class="button"
+              id="contato"
+              href="https://api.whatsapp.com/send?phone=SeuNúmero&text=SuaMensagem"
+              target="_blank"
+              ><i class="icon-whatsapp"></i>Entrar em contato</a
+            >
+          </div>
+
+          <div class="links">
+            <ul class="grid">
+              <li><i class="icon-instagram"></i> @dickstore</li>
+              <li><i class="icon-mail"></i> dickystore@outlook.com</li>
+              <!-- <li><i class="icon-map-pin"></i> Endereço</li> -->
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- BARRA 5 -->
+      <div class="divider-1"></div>
+    </main>
+
+    <footer class="section">
+      <div class="container grid">
+        <div class="brand">
+          <a class="logo logo-alt" href="#home">Dicky <span>Store</span></a>
+          <p>©2021 Dicky Store</p>
+          <p>Todos os direitos reservados.</p>
+        </div>
+
+        <div class="social">
+          <a href="https://instagram.com" target="_blank"
+            ><i class="icon-instagram"></i>dickStore</a
+          >
+          <a href="https://whatsapp.com" target="_blank"
+            ><i class="icon-whatsapp"></i>8812345678</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <a href="#home" class="back-top"><i class="icon-up"></i></a>
+
+    <!-- SWIPER -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- SCROLL-REVEAL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="main.js"></script>
+  </body>
+</html>
