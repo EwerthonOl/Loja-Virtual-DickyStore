@@ -36,6 +36,10 @@ const swiper = new Swiper('.swiper-container', {
   pagination: {
     el: '.swiper-pagination'
   },
+  // navigation: {
+  //   nextEl: '.swiper-button-next',
+  //   prevEl: '.swiper-button-prev'
+  // },
   keyboard: true
 })
 
@@ -49,7 +53,7 @@ const scrollReveal = ScrollReveal({
 })
 
 scrollReveal.reveal(
-  `#home .image, #home .text,
+  `#home .text, #home .image,
    #about .image, #about .text,
    #services header, #services .card,
    #testimonials header, #testimonials .testimonials,
