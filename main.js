@@ -36,10 +36,13 @@ const swiper = new Swiper('.swiper-container', {
   pagination: {
     el: '.swiper-pagination'
   },
-  // navigation: {
-  //   nextEl: '.swiper-button-next',
-  //   prevEl: '.swiper-button-prev'
-  // },
+  /* PONTOS DE QUBRA */
+  breakpoints: {
+    770: {
+      slidesPerView: 2,
+      setWrapperSize: true
+    }
+  },
   keyboard: true
 })
 

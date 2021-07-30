@@ -94,7 +94,7 @@ body {
 }
 
 .section {
-  padding: 9.5rem 0;
+  padding: 8rem 0;
 }
 
 .section .title {
@@ -263,8 +263,8 @@ nav.show div.icon-close {
 
 #home {
   overflow: hidden;
-  display: inline-flex;
-  justify-content: space-between;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -277,6 +277,7 @@ nav.show div.icon-close {
   margin-bottom: 2rem;
   margin-left: auto;
   margin-right: auto;
+  justify-content: center;
 }
 
 /* #home .image::before {
@@ -291,9 +292,8 @@ nav.show div.icon-close {
 } */
 
 #home .image img {
-  position: relative;
-  width: 100%;
-  height: 100%;
+  width: 30rem;
+  height: 30rem;
 }
 
 #home .text {
@@ -338,6 +338,7 @@ nav.show div.icon-close {
 
 #about .image img {
   position: relative;
+  width: auto;
 }
 
 #about .image img,
@@ -360,7 +361,7 @@ nav.show div.icon-close {
 }
 
 .card {
-  padding: 3.625rem 2rem;
+  padding: 3rem 3rem;
   box-shadow: 0px 0px 12px rgb(141, 0, 223);
   border-bottom: 0.25rem solid var(--base-color);
   border-radius: 0.25rem 0.25rem 0 0;
@@ -368,13 +369,15 @@ nav.show div.icon-close {
 }
 
 .card i {
-  display: block;
-  margin-bottom: 1.5rem;
-  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  font-size: 8rem;
   color: var(--base-color);
 }
 
 .card .title {
+  display: inline-block;
+  text-align: center;
   font-size: 1.5rem;
   margin-bottom: 0.75rem;
 }
@@ -383,7 +386,7 @@ nav.show div.icon-close {
 
 /* #services .container .cards .bones.show {
   width: 100%;
-  background-color: chartreuse;
+  
 } */
 
 /* ======================================= TESTIMONIALS =================================*/
@@ -532,14 +535,14 @@ footer i {
 }
 
 footer .social {
-  grid-auto-flow: column;
-  width: fit-content;
+  display: flex;
+  align-items: center;
 }
 
 footer .social a {
   display: inline-block;
-  margin-right: 2rem;
   transition: 0.3s;
+  margin-right: 4rem;
 
   color: var(--boyd-color);
 
@@ -585,21 +588,21 @@ footer .social a:hover {
 /*===== MEDIA QUERIES ======*/
 /*extra large devices: 1200> */
 @media (min-width: 1200px) {
-  #home {
-    display: flex;
-  }
-
-  #home .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1120px;
-    margin-left: auto;
-    margin-right: auto;
+  header .container {
+    margin-left: 5rem;
+    margin-right: 5rem;
   }
 
   .section {
-    padding: 6rem 0;
+    padding: 8rem 0;
+  }
+
+  .section header,
+  #testimonials header {
+    max-width: 32rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   nav .menu {
@@ -622,6 +625,21 @@ footer .social a:hover {
     display: none;
   }
 
+  /* HOME */
+
+  #home {
+    display: flex;
+  }
+
+  #home .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   #home .image {
     order: 1;
     max-width: 30rem;
@@ -633,6 +651,77 @@ footer .social a:hover {
     max-width: 24rem;
     text-align: left;
     margin-right: 5rem;
+  }
+
+  #home .button {
+    display: inline-flex;
+    text-align: center;
+    margin-top: 2rem;
+    margin-left: 5rem;
+  }
+
+  /* BOX SLIDER */
+
+  #testimonials .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* PRODUTOS */
+  #services .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #services .card {
+    padding: 3rem;
+  }
+
+  /* SOBRE */
+
+  #about .container {
+    margin: 0 auto;
+    grid-auto-flow: column;
+  }
+
+  /* CONTACT */
+  #contact .container {
+    grid-auto-flow: column;
+    align-items: center;
+  }
+
+  #contact .text {
+    max-width: 25rem;
+  }
+
+  #contact .text h2,
+  #contact .text p {
+    text-align: left;
+  }
+
+  #contact .text #contato {
+    text-align: center;
+    width: 16rem;
+  }
+
+  #contact .text p {
+    margin-bottom: 4rem;
+  }
+
+  footer.section {
+    padding: 3.8rem 0;
+  }
+
+  footer .container {
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  footer .social a {
+    margin-left: 5rem;
+    margin-right: auto;
   }
 
   main {
