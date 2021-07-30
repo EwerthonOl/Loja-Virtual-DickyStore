@@ -292,8 +292,8 @@ nav.show div.icon-close {
 } */
 
 #home .image img {
-  width: 30rem;
-  height: 30rem;
+  width: auto;
+  height: 25rem;
 }
 
 #home .text {
@@ -338,7 +338,6 @@ nav.show div.icon-close {
 
 #about .image img {
   position: relative;
-  width: auto;
 }
 
 #about .image img,
@@ -644,6 +643,11 @@ footer .social a:hover {
     order: 1;
     max-width: 30rem;
     margin-left: 5rem;
+  }
+
+  #home .image img {
+    width: auto;
+    height: 40rem;
   }
 
   #home .text {
