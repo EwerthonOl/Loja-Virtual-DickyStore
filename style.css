@@ -292,8 +292,8 @@ nav.show div.icon-close {
 } */
 
 #home .image img {
-  width: auto;
-  height: 25rem;
+  width: 20rem;
+  height: auto;
 }
 
 #home .text {
@@ -319,10 +319,6 @@ nav.show div.icon-close {
 
 #about .container {
   margin: 0;
-}
-
-#about .image {
-  position: relative;
 }
 
 #about .image::before {
@@ -647,7 +643,7 @@ footer .social a:hover {
 
   #home .image img {
     width: auto;
-    height: 40rem;
+    height: 30rem;
   }
 
   #home .text {
