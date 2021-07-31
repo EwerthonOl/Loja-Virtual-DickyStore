@@ -407,8 +407,7 @@ nav.show div.icon-close {
   box-shadow: 0px 0px 12px rgb(141, 0, 223);
   border-radius: 0.25rem;
   width: auto;
-  min-height: 16rem;
-  max-height: max-content;
+  height: 15rem;
 }
 
 #testimonials blockquote p {
