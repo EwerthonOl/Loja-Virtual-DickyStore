@@ -130,7 +130,7 @@ body {
 }
 
 #header.scroll {
-  background: var(--base-color);
+  background: linear-gradient(rgb(27 27 27) 0%, rgb(104 0 173 / 90%) 100%);
   box-shadow: 0 0 5px rgb(211, 211, 211);
   border-color: var(--base-color);
 }
@@ -179,7 +179,8 @@ nav ul li a {
   position: relative;
 }
 
-nav ul li a:hover {
+nav ul li a:hover,
+nav ul li a.active {
   color: var(--text-color-light);
 }
 
@@ -196,7 +197,8 @@ nav ul li a::after {
   transition: width 0.2s;
 }
 
-nav ul li a:hover::after {
+nav ul li a:hover::after,
+nav ul li a.active::after {
   width: 100%;
 }
 
@@ -353,11 +355,13 @@ nav.show div.icon-close {
 }
 .cards.grid {
   gap: 1.5rem;
+  margin: 0 1.6rem;
 }
 
 .card {
-  padding: 3rem 3rem;
-  box-shadow: 0px 0px 12px rgb(141, 0, 223);
+  padding: 3.5rem 3rem;
+  background: linear-gradient(rgba(255, 255, 255, 0) 0%, rgb(27 27 27) 100%);
+  box-shadow: 0px 0px 12px var(--base-color);
   border-bottom: 0.25rem solid var(--base-color);
   border-radius: 0.25rem 0.25rem 0 0;
   text-align: center;
@@ -404,10 +408,14 @@ nav.show div.icon-close {
 
 #testimonials blockquote {
   padding: 2rem;
-  box-shadow: 0px 0px 12px rgb(141, 0, 223);
+  background: linear-gradient(rgba(255, 255, 255, 0) 0%, rgb(27 27 27) 100%);
+  box-shadow: 0px 0px 8px var(--base-color);
+  border-bottom: 0.2rem solid var(--base-color);
   border-radius: 0.25rem;
+
   width: auto;
-  height: 15rem;
+  height: auto;
+  margin: auto 2rem;
 }
 
 #testimonials blockquote p {
@@ -505,7 +513,7 @@ nav.show div.icon-close {
 /* ======================================= FOOTER =================================*/
 
 footer {
-  background: var(--base-color-second);
+  background: linear-gradient(var(--base-color-second) 0%, rgb(27 27 27) 100%);
 }
 
 footer.section {
@@ -588,7 +596,7 @@ footer .social a:hover {
   }
 
   .section {
-    padding: 8rem 0;
+    padding: 7rem 0;
   }
 
   .section header,
@@ -613,6 +621,7 @@ footer .social a:hover {
   nav .menu ul li a.title {
     font: 400 1rem var(--body-font);
     color: var(--text-color-light);
+    -webkit-font-smoothing: antialiased;
   }
 
   nav .icon-menu {
@@ -620,10 +629,6 @@ footer .social a:hover {
   }
 
   /* HOME */
-
-  #home {
-    display: flex;
-  }
 
   #home .container {
     display: flex;
@@ -666,13 +671,14 @@ footer .social a:hover {
     margin-right: auto;
   }
 
+  #testimonials blockquote {
+    width: auto;
+    height: 15rem;
+  }
   /* PRODUTOS */
   #services .cards {
     grid-template-columns: 1fr 1fr;
-  }
-
-  #services .card {
-    padding: 3rem;
+    margin: auto 2rem;
   }
 
   /* SOBRE */
@@ -690,6 +696,7 @@ footer .social a:hover {
 
   #contact .text {
     max-width: 25rem;
+    padding-left: 5rem;
   }
 
   #contact .text h2,
@@ -732,6 +739,123 @@ footer .social a:hover {
   :root {
     --title-font-size: 2.25rem;
     --subtitle-font-size: 1.125rem;
+  }
+
+  header .container {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .section {
+    padding: 7rem 0;
+  }
+
+  .section header,
+  #testimonials header {
+    max-width: 32rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  nav .menu {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+  }
+
+  nav .menu ul {
+    display: flex;
+    gap: 2rem;
+  }
+
+  nav .menu ul li a.title {
+    font: 400 1rem var(--body-font);
+    color: var(--text-color-light);
+  }
+
+  nav .icon-menu {
+    display: none;
+  }
+
+  /* HOME */
+
+  #home .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1120px;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  #home .image {
+    order: 1;
+    max-width: 30rem;
+    margin-left: 5rem;
+  }
+
+  #home .image img {
+    width: auto;
+    height: 30rem;
+  }
+
+  #home .text {
+    order: 0;
+    max-width: 24rem;
+    text-align: left;
+    margin-right: 5rem;
+  }
+
+  /*  testimonials */
+  #testimonials blockquote {
+    width: auto;
+    height: 17rem;
+  }
+
+  /* PRODUTOS */
+  #services .cards {
+    grid-template-columns: 1fr 1fr;
+    margin: auto 2rem;
+  }
+
+  /* SOBRE */
+
+  #about .container {
+    margin: 0 auto;
+    grid-auto-flow: column;
+  }
+
+  /* contato */
+
+  #contact .text h2,
+  #contact .text p {
+    text-align: center;
+  }
+
+  #contact .text #contato {
+    width: 16rem;
+  }
+
+  #contact ul.grid {
+    padding-left: 5rem;
+  }
+
+  footer.section {
+    padding: 3.8rem 0;
+  }
+
+  footer .container {
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  footer .social a {
+    margin-left: 5rem;
+    margin-right: auto;
   }
 }
 /* large devices: 992> */

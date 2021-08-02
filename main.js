@@ -21,13 +21,13 @@ for (const link of links) {
 const header = document.querySelector('#header')
 const navHeight = header.offsetHeight
 
-window.addEventListener('scroll', function () {
+function changeHeader() {
   if (window.scrollY >= navHeight) {
     header.classList.add('scroll')
   } else {
     header.classList.remove('scroll')
   }
-})
+}
 
 /* TESTIMONIALS CAROUSEL SLIDER SWIPER */
 
@@ -65,19 +65,44 @@ scrollReveal.reveal(
   { interval: 100 }
 )
 
-/* MENU DOS BONES */
-// const bones = document.querySelector('#services .container .cards .bones')
-// bones.addEventListener('click', function () {
-//   bones.classList.toggle('show')
-// })
-
-/* BOTÃO UP */
-
 const backTop = document.querySelector('.back-top')
-window.addEventListener('scroll', function () {
+function backToTop() {
   if (window.scrollY >= 560) {
     backTop.classList.add('show')
   } else {
     backTop.classList.remove('show')
   }
+}
+
+/* MENU HEADER ATIVO NAS SESSOES DA PAGINA */
+const sections = document.querySelectorAll('main section[id]')
+function showSectionCorrentMenu() {
+  /* DIVIDIR A TELA EM 8 E PEGAR O PEDAÇO EQUIVALENTE A 4 */
+  const checkpoint = window.pageYOffset + (window.innerHeight / 8) * 4
+
+  for (const section of sections) {
+    const sectionTop = section.offsetTop
+    const sectionHeight = section.offsetHeight
+    const sectionId = section.getAttribute('id')
+
+    const checkpointStart = checkpoint >= sectionTop
+    const checkpointEnd = checkpoint <= sectionTop + sectionHeight
+
+    if (checkpointStart && checkpointEnd) {
+      document
+        .querySelector('nav div ul li a[href*= ' + sectionId + ']')
+        .classList.add('active')
+    } else {
+      document
+        .querySelector('nav div ul li a[href*= ' + sectionId + ']')
+        .classList.remove('active')
+    }
+  }
+}
+
+/* When Scroll */
+window.addEventListener('scroll', function () {
+  changeHeader()
+  backToTop()
+  showSectionCorrentMenu()
 })
