@@ -31,14 +31,35 @@ function changeHeader() {
 
 /* TESTIMONIALS CAROUSEL SLIDER SWIPER */
 
-const swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.container.swiper-container', {
   slidesPerView: 1,
   pagination: {
     el: '.swiper-pagination'
   },
   /* PONTOS DE QUBRA */
   breakpoints: {
-    770: {
+    760: {
+      slidesPerView: 2,
+      setWrapperSize: true
+    },
+    992: {
+      slidesPerView: 1,
+      setWrapperSize: true
+    }
+  },
+  keyboard: true
+})
+
+/* TESTIMONIALS CAROUSEL SLIDER SWIPER */
+
+const swiperMarcas = new Swiper('.testimonials.swiper-container', {
+  slidesPerView: 1,
+  pagination: {
+    el: '.swiper-pagination'
+  },
+  /* PONTOS DE QUBRA */
+  breakpoints: {
+    760: {
       slidesPerView: 2,
       setWrapperSize: true
     }
@@ -56,7 +77,7 @@ const scrollReveal = ScrollReveal({
 })
 
 scrollReveal.reveal(
-  `#home .text, #home .image,
+  `#home .text, #home .container,
    #about .image, #about .text,
    #services header, #services .card,
    #testimonials header, #testimonials .testimonials,

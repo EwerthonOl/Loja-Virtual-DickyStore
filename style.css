@@ -130,7 +130,7 @@ body {
 }
 
 #header.scroll {
-  background: linear-gradient(rgb(27 27 27) 0%, rgb(104 0 173 / 90%) 100%);
+  background: linear-gradient(rgb(122 0 192) 0%, rgb(104 0 173 / 90%) 100%);
   box-shadow: 0 0 5px rgb(211, 211, 211);
   border-color: var(--base-color);
 }
@@ -275,10 +275,7 @@ nav.show div.icon-close {
 }
 
 #home .image {
-  position: relative;
-  margin-bottom: 2rem;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
   justify-content: center;
 }
 
@@ -499,11 +496,16 @@ nav.show div.icon-close {
 
 #contact ul.grid {
   gap: 2rem;
+  margin-top: 2rem;
 }
 
 #contact ul li {
   display: flex;
   align-items: center;
+}
+
+#contact ul li.title {
+  font-size: 1.5rem;
 }
 
 #contact ul li i {
@@ -661,7 +663,6 @@ footer .social a:hover {
     display: inline-flex;
     text-align: center;
     margin-top: 2rem;
-    margin-left: 5rem;
   }
 
   /* BOX SLIDER */
@@ -735,6 +736,8 @@ footer .social a:hover {
   }
 }
 /* large devices: 1023> */
+
+/* large devices: 992> */
 @media (min-width: 992px) {
   :root {
     --title-font-size: 2.25rem;
@@ -774,6 +777,11 @@ footer .social a:hover {
     color: var(--text-color-light);
   }
 
+  nav .menu ul li a.title.active {
+    font-weight: bold;
+    -webkit-font-smoothing: auto;
+  }
+
   nav .icon-menu {
     display: none;
   }
@@ -785,8 +793,6 @@ footer .social a:hover {
     align-items: center;
     justify-content: space-between;
     max-width: 1120px;
-    margin-left: 5rem;
-    margin-right: 5rem;
   }
 
   #home .image {
@@ -802,7 +808,7 @@ footer .social a:hover {
 
   #home .text {
     order: 0;
-    max-width: 24rem;
+    width: 60%;
     text-align: left;
     margin-right: 5rem;
   }
@@ -858,5 +864,18 @@ footer .social a:hover {
     margin-right: auto;
   }
 }
-/* large devices: 992> */
-/* medium devices: 767> */
+/* medium devices: 770> */
+@media (min-width: 760px) {
+  .section {
+    padding: 6rem 0;
+  }
+
+  #home .container.swiper-container {
+    max-width: 800px;
+  }
+  /*  testimonials */
+  #testimonials blockquote {
+    width: auto;
+    height: 17rem;
+  }
+}
