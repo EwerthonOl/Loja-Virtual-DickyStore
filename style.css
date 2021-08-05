@@ -450,6 +450,9 @@ nav.show div.icon-close {
 .swiper-slide {
   height: auto;
   padding: 4rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .swiper-pagination-bullet {
@@ -462,10 +465,6 @@ nav.show div.icon-close {
   background: var(--text-color-light);
 }
 /* 
-.swiper-button-next,
-.swiper-button-prev {
-  color: var(--base-color);
-} */
 
 /* ======================================= CONTACT =================================*/
 
@@ -877,5 +876,22 @@ footer .social a:hover {
   #testimonials blockquote {
     width: auto;
     height: 17rem;
+  }
+
+  footer.section {
+    padding: 3.8rem 0;
+  }
+
+  footer .container {
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  footer .social a {
+    margin-left: 5rem;
+    margin-right: auto;
   }
 }

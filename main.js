@@ -29,10 +29,14 @@ function changeHeader() {
   }
 }
 
-/* TESTIMONIALS CAROUSEL SLIDER SWIPER */
+/* HOME CAROUSEL SLIDER SWIPER */
 
 const swiper = new Swiper('.container.swiper-container', {
   slidesPerView: 1,
+  autoplay: {
+    delay: 2500
+  },
+  speed: 500,
   pagination: {
     el: '.swiper-pagination'
   },
@@ -54,6 +58,10 @@ const swiper = new Swiper('.container.swiper-container', {
 
 const swiperMarcas = new Swiper('.testimonials.swiper-container', {
   slidesPerView: 1,
+  autoplay: {
+    delay: 2500
+  },
+  speed: 500,
   pagination: {
     el: '.swiper-pagination'
   },
