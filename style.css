@@ -13,6 +13,8 @@ ul {
 
 a {
   text-decoration: none;
+  color: var(--text-color);
+  font-style: italic;
 }
 
 img {
@@ -452,7 +454,7 @@ nav.show div.icon-close {
   padding: 4rem 1rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .swiper-pagination-bullet {
@@ -598,6 +600,11 @@ footer .social a:hover {
 
   .section {
     padding: 7rem 0;
+  }
+
+  #home.section {
+    padding-top: 4rem;
+    padding-bottom: 5rem;
   }
 
   .section header,
