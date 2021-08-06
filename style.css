@@ -67,11 +67,11 @@ body {
   padding: 0 2rem;
   border-radius: 0.25rem;
   font: 500 var(--subtitle-font-size) var(--body-font);
-  transition: background 0.3s;
+  transition: filter 0.3s;
 }
 
 .button:hover {
-  background: var(--base-color-alt);
+  filter: brightness(1.4);
 }
 
 .divider-1 {
@@ -96,7 +96,7 @@ body {
 }
 
 .section {
-  padding: 8rem 0;
+  padding: 7rem 0;
 }
 
 .section .title {
@@ -380,6 +380,18 @@ nav.show div.icon-close {
   margin-bottom: 0.75rem;
 }
 
+#services a {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 15rem;
+  height: 3rem;
+}
+
 /*MENU DAS PEÇAS*/
 
 /* #services .container .cards .bones.show {
@@ -454,7 +466,7 @@ nav.show div.icon-close {
   padding: 4rem 1rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .swiper-pagination-bullet {
@@ -650,12 +662,12 @@ footer .social a:hover {
   #home .image {
     order: 1;
     max-width: 30rem;
-    margin-left: 5rem;
   }
 
   #home .image img {
     width: auto;
     height: 30rem;
+    margin-right: 5rem;
   }
 
   #home .text {
@@ -669,6 +681,14 @@ footer .social a:hover {
     display: inline-flex;
     text-align: center;
     margin-top: 2rem;
+  }
+
+  #home .swiper-slide {
+    justify-content: space-between;
+  }
+
+  #home .swiper-pagination.swiper-pagination-bullets {
+    margin-left: -1.5rem;
   }
 
   /* BOX SLIDER */
@@ -819,6 +839,10 @@ footer .social a:hover {
     margin-right: 5rem;
   }
 
+  #home .swiper-pagination-bullets {
+    margin-left: 2.5rem;
+  }
+
   /*  testimonials */
   #testimonials blockquote {
     width: auto;
@@ -882,7 +906,7 @@ footer .social a:hover {
   /*  testimonials */
   #testimonials blockquote {
     width: auto;
-    height: 17rem;
+    height: 18rem;
   }
 
   footer.section {
