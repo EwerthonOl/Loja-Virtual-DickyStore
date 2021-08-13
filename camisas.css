@@ -288,17 +288,17 @@ header p {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   padding: 1rem;
-  border: 1.5px solid var(--text-color);
 
+  box-shadow: 0 0 0.5rem var(--text-color);
   background-image: linear-gradient(to top, #080808 0%, rgb(20, 3, 34) 100%);
+
+  border-radius: 0.3rem;
 }
 
 .shirt .button {
   justify-content: center;
   width: 6rem;
-
   margin-top: 0.5rem;
 }
 
@@ -375,4 +375,146 @@ footer .social a:hover {
   opacity: 1;
 
   transform: translateY(0);
+}
+
+/* ======================================= RESPONSIVO =================================*/
+
+/*===== MEDIA QUERIES ======*/
+/*extra large devices: 1200> */
+
+@media (min-width: 1200px) {
+  header .container {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .section {
+    padding: 7rem 0;
+  }
+
+  nav .menu {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+  }
+
+  nav .menu ul {
+    display: flex;
+    gap: 2rem;
+  }
+
+  nav .menu ul li a.title {
+    font: 400 1rem var(--body-font);
+    color: var(--text-color-light);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  nav .icon-menu {
+    display: none;
+  }
+
+  footer.section {
+    padding: 3.8rem 0;
+  }
+
+  footer .container {
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  footer .social a {
+    margin-left: 5rem;
+    margin-right: auto;
+  }
+}
+
+/* large devices: 992> */
+@media (min-width: 992px) {
+  :root {
+    --title-font-size: 2.25rem;
+    --subtitle-font-size: 1.125rem;
+  }
+
+  header .container {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  nav .menu {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+  }
+
+  nav .menu ul {
+    display: flex;
+    gap: 2rem;
+  }
+
+  nav .menu ul li a.title {
+    font: 400 1rem var(--body-font);
+    color: var(--text-color-light);
+  }
+
+  nav .menu ul li a.title.active {
+    font-weight: bold;
+    -webkit-font-smoothing: auto;
+  }
+
+  nav .icon-menu {
+    display: none;
+  }
+
+  .shirts {
+    grid-template-areas: '1 2 3';
+  }
+
+  footer.section {
+    padding: 3.8rem 0;
+  }
+
+  footer .container {
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  footer .social a {
+    margin-left: 5rem;
+    margin-right: auto;
+  }
+}
+
+/* medium devices: 770> */
+
+@media (min-width: 760px) {
+  .section {
+    padding: 6rem 0;
+  }
+
+  .shirts {
+    padding: 1rem 3rem;
+  }
+
+  footer.section {
+    padding: 3.8rem 0;
+  }
+
+  footer .container {
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  footer .social a {
+    margin-left: 5rem;
+    margin-right: auto;
+  }
 }

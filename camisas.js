@@ -1,6 +1,6 @@
 /* ABRIR MENU TOGGLE*/
 const nav = document.querySelector('#header nav')
-const toggle = document.querySelectorAll('nav .toggle')
+const toggle = document.querySelectorAll('#header nav .toggle')
 
 for (const element of toggle) {
   element.addEventListener('click', function () {
@@ -63,6 +63,17 @@ function showSectionCorrentMenu() {
     }
   }
 }
+
+// /* MOSTRAR ELEMENTOS NO SCROLL DA PAG */
+
+// const scrollReveal = ScrollReveal({
+//   origin: 'top',
+//   distance: '30px',
+//   duration: 700,
+//   reset: true
+// })
+
+// scrollReveal.reveal(`#home header, #home .shirts`, { interval: 100 })
 
 /* When Scroll */
 window.addEventListener('scroll', function () {
