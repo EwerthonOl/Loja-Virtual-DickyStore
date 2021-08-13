@@ -28,11 +28,13 @@
         <a class="logo" href="#home">Dicky <span>Store</span></a>
         <div class="menu">
           <ul class="grid">
-            <li><a class="title" href="#home">Início</a></li>
-            <li><a class="title" href="#testimonials">Marcas</a></li>
-            <li><a class="title" href="#services">Produtos</a></li>
-            <li><a class="title" href="#about">Sobre nós</a></li>
-            <li><a class="title" href="#contact">Contato</a></li>
+            <li><a class="title" href="./index.html#home">Início</a></li>
+            <li>
+              <a class="title" href="./index.html#testimonials">Marcas</a>
+            </li>
+            <li><a class="title" href="./index.html#services">Produtos</a></li>
+            <li><a class="title" href="./index.html#about">Sobre nós</a></li>
+            <li><a class="title" href="./index.html#contact">Contato</a></li>
           </ul>
         </div>
         <!-- toggle -->
@@ -43,9 +45,14 @@
     </header>
 
     <main>
-      <section class="left_shirts section">
+      <section class="section" id="home">
         <header>
           <h2 class="title">Camisas</h2>
+          <p>
+            Ao clicar em comprar, você será direcionado para o Whatsapp com o
+            código do produto que voce quer escolher, para que nós possamos
+            atendê-lo.
+          </p>
         </header>
 
         <div class="shirts">
@@ -55,12 +62,15 @@
               alt="Foto da camisa"
               class="image_shirt"
             />
-            <div class="info">
-              <p>P - M</p>
-              <p>R$ 40,00</p>
-            </div>
 
-            <a href="" class="button">Comprar</a>
+            <p>P - M</p>
+            <p>R$ 40,00</p>
+
+            <a
+              href="https://api.whatsapp.com/send?phone=+5588993588893&text=Camisa: P-1"
+              class="button"
+              >Comprar</a
+            >
           </div>
 
           <div class="shirt">
@@ -451,9 +461,8 @@
           </div>
         </div>
       </footer>
-
-      <a href="#home" class="back-top"><i class="icon-up"></i></a>
     </main>
+    <a href="#home" class="back-top"><i class="icon-up"></i></a>
 
     <script src="./camisas.js"></script>
   </body>
