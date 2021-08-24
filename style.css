@@ -528,6 +528,13 @@ nav.show div.icon-close {
   color: var(--base-color);
 }
 
+#contact .contactButton {
+  border-top: 0.2rem double hsl(271, 100%, 50%);
+
+  border-bottom: 0.2rem double hsl(271, 100%, 50%);
+  padding: 0.3rem;
+}
+
 /* ======================================= FOOTER =================================*/
 
 footer {
