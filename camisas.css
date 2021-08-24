@@ -282,6 +282,7 @@ header p {
   gap: 2rem;
 
   padding: 1rem;
+  margin-bottom: 2rem;
 }
 
 .shirt {
@@ -300,6 +301,12 @@ header p {
   justify-content: center;
   width: 6rem;
   margin-top: 0.5rem;
+}
+
+#services #footer {
+  padding-top: 1rem;
+
+  text-align: center;
 }
 
 /* ======================================= FOOTER =================================*/
