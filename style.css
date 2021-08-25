@@ -267,9 +267,6 @@ nav.show div.icon-close {
 
 #home {
   overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #home .container {
@@ -298,6 +295,7 @@ nav.show div.icon-close {
 }
 
 #home .text {
+  margin-top: 2.5rem;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   text-align: center;
@@ -352,6 +350,11 @@ nav.show div.icon-close {
 #services header .title {
   text-align: center;
 }
+
+#services .subtitle {
+  text-align: center;
+}
+
 .cards.grid {
   gap: 1.5rem;
   margin: 0 1.6rem;
@@ -392,7 +395,7 @@ nav.show div.icon-close {
 }
 
 #services img {
-  width: 10rem;
+  max-width: 10rem;
 }
 
 /*MENU DAS PEÇAS*/
@@ -465,8 +468,8 @@ nav.show div.icon-close {
 /* ======================================= SWIPER =================================*/
 
 .swiper-slide {
-  height: auto;
   padding: 4rem 1rem;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -660,13 +663,8 @@ footer .social a:hover {
 
   /* HOME */
 
-  #home .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1120px;
-    margin-left: auto;
-    margin-right: auto;
+  #home .homeContent {
+    justify-content: center;
   }
 
   #home .image {
@@ -691,10 +689,6 @@ footer .social a:hover {
     display: inline-flex;
     text-align: center;
     margin-top: 2rem;
-  }
-
-  #home .swiper-slide {
-    justify-content: space-between;
   }
 
   #home .swiper-pagination.swiper-pagination-bullets {
@@ -824,11 +818,10 @@ footer .social a:hover {
 
   /* HOME */
 
-  #home .container {
+  #home .homeContent {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    max-width: 1120px;
+    justify-content: space-evenly;
   }
 
   #home .image {
@@ -837,20 +830,10 @@ footer .social a:hover {
     margin-left: 5rem;
   }
 
-  #home .image img {
-    width: auto;
-    height: 30rem;
-  }
-
   #home .text {
     order: 0;
-    width: 60%;
+    width: 50%;
     text-align: left;
-    margin-right: 5rem;
-  }
-
-  #home .swiper-pagination-bullets {
-    margin-left: 2.5rem;
   }
 
   /*  testimonials */
@@ -910,8 +893,22 @@ footer .social a:hover {
     padding: 6rem 0;
   }
 
-  #home .container.swiper-container {
-    max-width: 800px;
+  #home .homeContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  #home .image {
+    order: 1;
+    max-width: 30rem;
+    margin-left: 5rem;
+  }
+
+  #home .text {
+    order: 0;
+    width: 50%;
+    text-align: center;
   }
 
   /*  testimonials */

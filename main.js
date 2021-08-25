@@ -31,28 +31,28 @@ function changeHeader() {
 
 /* HOME CAROUSEL SLIDER SWIPER */
 
-const swiper = new Swiper('.container.swiper-container', {
-  slidesPerView: 1,
-  autoplay: {
-    delay: 3000
-  },
-  speed: 500,
-  pagination: {
-    el: '.swiper-pagination'
-  },
-  /* PONTOS DE QUBRA */
-  breakpoints: {
-    760: {
-      slidesPerView: 2,
-      setWrapperSize: true
-    },
-    992: {
-      slidesPerView: 1,
-      setWrapperSize: true
-    }
-  },
-  keyboard: true
-})
+// const swiper = new Swiper('.homeContent .swiper-container', {
+//   slidesPerView: 1,
+//   autoplay: {
+//     delay: 3000
+//   },
+//   speed: 500,
+//   pagination: {
+//     el: '.swiper-pagination'
+//   },
+//   /* PONTOS DE QUBRA */
+//   breakpoints: {
+//     760: {
+//       slidesPerView: 2,
+//       setWrapperSize: true
+//     },
+//     992: {
+//       slidesPerView: 1,
+//       setWrapperSize: true
+//     }
+//   },
+//   keyboard: true
+// })
 
 /* TESTIMONIALS CAROUSEL SLIDER SWIPER */
 

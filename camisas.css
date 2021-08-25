@@ -303,6 +303,7 @@ nav.show div.icon-close {
 
 .shirts {
   display: grid;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas: 'left right';
   gap: 2rem;
 
@@ -502,7 +503,8 @@ footer .social a:hover {
   }
 
   .shirts {
-    grid-template-areas: '1 2 3';
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'left center right';
   }
 
   footer.section {
