@@ -56,24 +56,24 @@ const swiper = new Swiper('.container.swiper-container', {
 
 /* TESTIMONIALS CAROUSEL SLIDER SWIPER */
 
-const swiperMarcas = new Swiper('.testimonials.swiper-container', {
-  slidesPerView: 1,
-  autoplay: {
-    delay: 2500
-  },
-  speed: 500,
-  pagination: {
-    el: '.swiper-pagination'
-  },
-  /* PONTOS DE QUBRA */
-  breakpoints: {
-    760: {
-      slidesPerView: 2,
-      setWrapperSize: true
-    }
-  },
-  keyboard: true
-})
+// const swiperMarcas = new Swiper('.testimonials.swiper-container', {
+//   slidesPerView: 1,
+//   autoplay: {
+//     delay: 2500
+//   },
+//   speed: 500,
+//   pagination: {
+//     el: '.swiper-pagination'
+//   },
+//   /* PONTOS DE QUBRA */
+//   breakpoints: {
+//     760: {
+//       slidesPerView: 2,
+//       setWrapperSize: true
+//     }
+//   },
+//   keyboard: true
+// })
 
 /* ScrollReveal: MOSTRA ELEMENTOS NO SCROLL DA PÁGINA */
 
