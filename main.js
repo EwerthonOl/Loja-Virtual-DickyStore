@@ -34,7 +34,7 @@ function changeHeader() {
 const swiper = new Swiper('.container.swiper-container', {
   slidesPerView: 1,
   autoplay: {
-    delay: 2500
+    delay: 3000
   },
   speed: 500,
   pagination: {
@@ -80,8 +80,8 @@ const swiperMarcas = new Swiper('.testimonials.swiper-container', {
 const scrollReveal = ScrollReveal({
   origin: 'top',
   distance: '30px',
-  duration: 700,
-  reset: true
+  duration: 700
+  //reset: true
 })
 
 scrollReveal.reveal(

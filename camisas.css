@@ -96,7 +96,8 @@ body {
 }
 
 .section {
-  padding: 7rem 0;
+  padding-top: 6rem;
+  padding-bottom: 4rem;
 }
 
 .section .title {
@@ -270,7 +271,31 @@ nav.show div.icon-close {
   text-align: center;
 }
 
-header p {
+.promoDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 1rem;
+  max-width: 720px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  border: 0.2rem double hsl(271, 100%, 50%);
+}
+
+.promoDiv div {
+  border-bottom: 0.2rem double hsl(271, 100%, 50%);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+
+  text-align: center;
+  font-size: var(--title-font-size);
+}
+
+.promoDiv a {
+  font-size: var(--subtitle-font-size);
   text-align: center;
 }
 
@@ -304,11 +329,10 @@ header p {
 }
 
 #services #footer {
-  padding-top: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 1rem;
 
   text-align: center;
+  font-size: var(--subtitle-font-size);
 }
 
 /* ======================================= FOOTER =================================*/
@@ -502,10 +526,6 @@ footer .social a:hover {
 /* medium devices: 770> */
 
 @media (min-width: 760px) {
-  .section {
-    padding: 6rem 0;
-  }
-
   .shirts {
     padding: 1rem 3rem;
   }
