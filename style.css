@@ -465,27 +465,6 @@ nav.show div.icon-close {
   margin-right: auto;
 }
 
-/* ======================================= SWIPER =================================*/
-
-.swiper-slide {
-  padding: 4rem 1rem;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.swiper-pagination-bullet {
-  width: 0.75rem;
-  height: 0.75rem;
-  background: var(--text-color-light);
-}
-
-.swiper-pagination-bullet-active {
-  background: var(--text-color-light);
-}
-/* 
-
 /* ======================================= CONTACT =================================*/
 
 #contact .text h2 {
@@ -525,6 +504,8 @@ nav.show div.icon-close {
 
 #contact ul li.title {
   font-size: 1.5rem;
+  border-left: 0.2rem solid var(--base-color);
+  padding-left: 1rem;
 }
 
 #contact ul li i {
@@ -532,10 +513,8 @@ nav.show div.icon-close {
 }
 
 #contact .contactButton {
-  border-top: 0.2rem double hsl(271, 100%, 50%);
-
-  border-bottom: 0.2rem double hsl(271, 100%, 50%);
-  padding: 0.3rem;
+  border-bottom: 0.2rem groove hsl(271, 100%, 50%);
+  padding-bottom: 0.3rem;
 }
 
 /* ======================================= FOOTER =================================*/
