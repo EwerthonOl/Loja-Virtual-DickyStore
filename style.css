@@ -361,18 +361,25 @@ nav.show div.icon-close {
 }
 
 .card {
-  padding: 3.5rem 3rem;
+  padding: 3rem 3rem;
   background: linear-gradient(rgba(255, 255, 255, 0) 0%, rgb(27 27 27) 100%);
   box-shadow: 0px 0px 12px var(--base-color);
   border-bottom: 0.25rem solid var(--base-color);
   border-radius: 0.25rem 0.25rem 0 0;
   text-align: center;
+
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .card .images {
   display: block;
 
   margin-bottom: 0.5rem;
+}
+
+.card .newImages {
+  display: none;
 }
 
 .card .title {
@@ -825,6 +832,15 @@ footer .social a:hover {
   #services .cards {
     grid-template-columns: 1fr;
     margin: auto 2rem;
+  }
+
+  #services .newImages {
+    display: inline-block;
+  }
+
+  #services .images {
+    display: flex;
+    justify-content: space-evenly;
   }
 
   /* SOBRE */
