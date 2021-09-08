@@ -1,0 +1,3 @@
+ExpiresActive 0n
+ExpiresDefaulta A300
+ExpiresByType text/css A3600

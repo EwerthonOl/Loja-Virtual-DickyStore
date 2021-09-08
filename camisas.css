@@ -317,7 +317,7 @@ nav.show div.icon-close {
   align-items: center;
   padding: 1rem;
 
-  box-shadow: 0 0 0.5rem var(--text-color);
+  box-shadow: 0.1rem 0.1rem 0.5rem var(--text-color);
   background-image: linear-gradient(to top, #080808 0%, rgb(20, 3, 34) 100%);
 
   border-radius: 0.3rem;
