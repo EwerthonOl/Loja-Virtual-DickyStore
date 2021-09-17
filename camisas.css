@@ -276,19 +276,25 @@ nav.show div.icon-close {
   flex-direction: column;
   align-items: center;
 
-  padding: 1rem;
+  padding: 1rem 0;
   max-width: 720px;
 
   margin-left: auto;
   margin-right: auto;
 
+  background: linear-gradient(to left, #000000, #1d1d1d);
+
   border: 0.2rem double hsl(271, 100%, 50%);
+  border-radius: 0.5rem;
 }
 
 .promoDiv div {
-  border-bottom: 0.2rem double hsl(271, 100%, 50%);
-  padding-bottom: 0.5rem;
-  margin-bottom: 1rem;
+  border-bottom: 0.2rem inset hsl(271, 100%, 50%);
+  border-radius: 0.8rem;
+
+  padding: 0.3rem 1rem;
+
+  margin-bottom: 0.5rem;
 
   text-align: center;
   font-size: var(--title-font-size);
@@ -297,6 +303,13 @@ nav.show div.icon-close {
 .promoDiv a {
   font-size: var(--subtitle-font-size);
   text-align: center;
+
+  border-top: 0.2rem inset hsl(271, 100%, 50%);
+  border-bottom: 0.2rem inset hsl(271, 100%, 50%);
+
+  border-radius: 0.8rem;
+
+  padding: 0.4rem 1rem;
 }
 
 /* ======================================= GRID =================================*/
@@ -317,7 +330,7 @@ nav.show div.icon-close {
   align-items: center;
   padding: 1rem;
 
-  box-shadow: 0.1rem 0.1rem 0.5rem var(--text-color);
+  box-shadow: 0.1rem 0.1rem 0.3rem var(--text-color);
   background-image: linear-gradient(to top, #080808 0%, rgb(20, 3, 34) 100%);
 
   border-radius: 0.3rem;

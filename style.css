@@ -520,8 +520,12 @@ nav.show div.icon-close {
 }
 
 #contact .contactButton {
-  border-bottom: 0.2rem groove hsl(271, 100%, 50%);
-  padding-bottom: 0.3rem;
+  border-bottom: 0.15rem inset hsl(271, 100%, 50%);
+  border-top: 0.15rem inset hsl(271, 100%, 50%);
+
+  border-radius: 0.6rem;
+
+  padding: 0.3rem 0.5rem;
 }
 
 /* ======================================= FOOTER =================================*/
