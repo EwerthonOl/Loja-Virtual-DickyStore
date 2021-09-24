@@ -318,17 +318,19 @@ nav.show div.icon-close {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: 'left right';
-  gap: 2rem;
+  gap: 1rem;
 
-  padding: 1rem;
-  margin-bottom: 2rem;
+  padding: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
 }
 
 .shirt {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 0.5rem;
 
   box-shadow: 0.1rem 0.1rem 0.3rem var(--text-color);
   background-image: linear-gradient(to top, #080808 0%, rgb(20, 3, 34) 100%);
@@ -542,7 +544,8 @@ footer .social a:hover {
 
 @media (min-width: 760px) {
   .shirts {
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
+    gap: 1rem;
   }
 
   footer.section {
