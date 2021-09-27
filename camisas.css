@@ -109,7 +109,7 @@ body {
 }
 
 .section header {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   padding: 1rem;
 }
 
@@ -312,36 +312,69 @@ nav.show div.icon-close {
   padding: 0.4rem 1rem;
 }
 
-/* ======================================= GRID =================================*/
+/* ======================================= GRID CAMISAS =================================*/
 
 .shirts {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: 'left right';
-  gap: 1rem;
+  grid-template-columns: 1fr;
+  place-items: center;
 
   padding: 0.5rem;
+  max-width: 95vw;
+
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1rem;
+
+  gap: 1rem;
 }
 
 .shirt {
   display: flex;
+  justify-content: space-around;
+
+  width: 90%;
+  padding: 1rem;
+  gap: 1rem;
+
+  border-radius: 0.5rem 0.5rem 0.2rem 0.2rem;
+  background: linear-gradient(145deg, #000000, #222222);
+  box-shadow: 2px 2px 5px #2f0850, -2px -2px 5px #7d14d5;
+}
+
+.shirt div {
+  width: 40%;
+
+  display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem 0.5rem;
+  justify-content: space-around;
+}
 
-  box-shadow: 0.1rem 0.1rem 0.3rem var(--text-color);
-  background-image: linear-gradient(to top, #080808 0%, rgb(20, 3, 34) 100%);
+.shirt div .tam {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
-  border-radius: 0.3rem;
+  gap: 0.5rem;
+}
+
+.shirt div .tam p {
+  width: 2rem;
+  height: 2rem;
+
+  border-radius: 15px;
+  background: #000000;
+  box-shadow: inset 5px 5px 10px #40248f, inset -5px -5px 10px #2b2397;
+
+  text-align: center;
+  line-height: 2rem;
 }
 
 .shirt .button {
   justify-content: center;
   width: 6rem;
-  margin-top: 0.5rem;
+
+  justify-self: flex-start;
 }
 
 #services #footer {
@@ -517,9 +550,9 @@ footer .social a:hover {
     display: none;
   }
 
-  .shirts {
+  #services .shirts {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 'left center right';
+    gap: 2.5rem;
   }
 
   footer.section {
@@ -542,10 +575,16 @@ footer .social a:hover {
 
 /* medium devices: 770> */
 
-@media (min-width: 760px) {
+@media (min-width: 700px) {
   .shirts {
-    padding: 1rem 2rem;
-    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+
+    gap: 1.5rem;
+  }
+
+  .shirt {
+    width: 100%;
   }
 
   footer.section {
