@@ -633,6 +633,23 @@ footer .social a:hover {
     padding-bottom: 5rem;
   }
 
+  #home .promo::before {
+    content: '';
+    height: 100%;
+    width: 80%;
+    border-radius: 0.2rem;
+
+    background: #41bea9;
+    position: absolute;
+    top: -10%;
+    left: -3%;
+    z-index: -1;
+  }
+
+  #home .image::before {
+    visibility: hidden;
+  }
+
   .section header,
   #testimonials header {
     max-width: 32rem;
@@ -903,6 +920,11 @@ footer .social a:hover {
     order: 1;
     max-width: 30rem;
     margin-left: 5rem;
+  }
+
+  #home .image::before {
+    left: auto;
+    right: 5%;
   }
 
   #home .text {
