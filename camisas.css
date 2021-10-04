@@ -337,9 +337,14 @@ nav.show div.icon-close {
   padding: 1rem;
   gap: 1rem;
 
-  border-radius: 0.5rem 0.5rem 0.2rem 0.2rem;
+  border-radius: 0.25rem 0.25rem 0.1rem 0.1rem;
+  border-bottom: 3px solid #7d14d5;
   background: linear-gradient(145deg, #000000, #222222);
-  box-shadow: 2px 2px 5px #2f0850, -2px -2px 5px #7d14d5;
+  box-shadow: 1px 1px 5px #160325, -1px -1px 5px #160325;
+}
+
+.shirt .image_shirt {
+  border-radius: 0.2rem;
 }
 
 .shirt div {

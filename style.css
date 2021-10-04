@@ -379,7 +379,7 @@ nav.show div.icon-close {
   margin-right: 2rem;
 
   border-radius: 0.5rem 0.5rem 0.2rem 0.2rem;
-  background: linear-gradient(145deg, #000000, #51455a);
+  background: linear-gradient(145deg, #000000, #222222);
   box-shadow: 3px 3px 10px #2f0850, -3px -3px 10px #7d14d5;
 }
 
@@ -401,15 +401,9 @@ nav.show div.icon-close {
 }
 
 #services a {
-  display: flex;
-  justify-content: center;
-
   margin-top: 0.5rem;
   margin-left: auto;
   margin-right: auto;
-
-  width: 15rem;
-  height: 3rem;
 }
 
 #services img {
@@ -500,8 +494,11 @@ nav.show div.icon-close {
 
 #contact .text #contato {
   display: flex;
-  width: 15rem;
-  margin: 0 auto;
+
+  max-width: fit-content;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #contact .button i,
@@ -527,14 +524,15 @@ nav.show div.icon-close {
 }
 
 #contact ul li i {
-  color: var(--base-color);
+  color: var(--text-color-light);
+  margin-right: 0;
 }
 
 #contact .contactButton {
-  border-bottom: 0.15rem inset hsl(271, 100%, 50%);
-  border-top: 0.15rem inset hsl(271, 100%, 50%);
+  border: inset hsl(271, 100%, 50%);
+  border-width: 0.15rem 0.15rem 0.15rem 0;
 
-  border-radius: 0.6rem;
+  border-radius: 0.5rem;
 
   padding: 0.3rem 0.5rem;
 }
