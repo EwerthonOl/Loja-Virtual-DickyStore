@@ -1,95 +1,100 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
+  <head>
+    <!-- PAGE INFO -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Loja de roupas Dicky, produtos de qualidade com um preço que cabe no seu bolso. Promoções ativas, acesse e veja mais. Envio para todo brasil."
+    />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript, Front-end, E-commerce, Dicky Store"
+    />
+    <meta name="author" content="F. Ewerthon Oliveira" />
 
-<head>
-  <!-- PAGE INFO -->
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Loja de roupas Dicky, produtos de qualidade com um preço que cabe no seu bolso. Promoções ativas, acesse e veja mais. Envio para todo brasil." />
-  <meta name="keywords" content="HTML, CSS, JavaScript, Front-end, E-commerce, Dicky Store">
-  <meta name="author" content="F. Ewerthon Oliveira">
+    <title>Dicky Store</title>
 
-  <title>Dicky Store</title>
+    <!-- ICONS -->
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="icon" href="./images/logo.png" />
 
-  <!-- ICONS -->
-  <link rel="stylesheet" href="assets/style.css" />
-  <link rel="icon" href="./images/logo.png" />
+    <!-- SYLES -->
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- SYLES -->
-  <link rel="stylesheet" href="style.css" />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <!-- FONTS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
-    rel="stylesheet" />
-</head>
+  <body>
+    <!-- CABEÇARIO -->
 
-<body>
-  <!-- CABEÇARIO -->
+    <header id="header">
+      <nav class="container">
+        <a class="logo" href="#home">Dicky <span>Store</span></a>
+        <div class="menu">
+          <ul class="grid">
+            <li><a class="title" href="#home">Início</a></li>
+            <li><a class="title" href="#services">Produtos</a></li>
+            <li><a class="title" href="#about">Sobre nós</a></li>
+            <li><a class="title" href="#contact">Contato</a></li>
+          </ul>
+        </div>
+        <!-- toggle -->
 
-  <header id="header">
-    <nav class="container">
-      <a class="logo" href="#home">Dicky <span>Store</span></a>
-      <div class="menu">
-        <ul class="grid">
-          <li><a class="title" href="#home">Início</a></li>
-          <li><a class="title" href="#services">Produtos</a></li>
-          <li><a class="title" href="#about">Sobre nós</a></li>
-          <li><a class="title" href="#contact">Contato</a></li>
-        </ul>
-      </div>
-      <!-- toggle -->
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-close"></div>
+      </nav>
+    </header>
 
-      <div class="toggle icon-menu"></div>
-      <div class="toggle icon-close"></div>
-    </nav>
-  </header>
-
-  <main>
-    <!-- HOME -->
-    <section class="section" id="home">
-      <div class="homeContent">
-        <div class="container">
-          <div class="promo">
-            <div class="image">
-              <img src="./images/promoção.jpg" alt="promoção-loja" />
+    <main>
+      <!-- HOME -->
+      <section class="section" id="home">
+        <div class="homeContent">
+          <div class="container">
+            <div class="promo">
+              <div class="image">
+                <img src="./images/promoção.jpg" alt="promoção-loja" />
+              </div>
             </div>
           </div>
+
+          <div class="text">
+            <h2 class="title">Monte seu estilo e faça a diferença</h2>
+            <p>
+              Conheça a Dicky Store e confira a qualidade dos nossos produtos.
+            </p>
+            <a class="button" href="#services">Veja mais</a>
+          </div>
         </div>
+      </section>
 
-        <div class="text">
-          <h2 class="title">Monte seu estilo e faça a diferença</h2>
-          <p>
-            Conheça a Dicky Store e confira a qualidade dos nossos produtos.
-          </p>
-          <a class="button" href="#services">Veja mais</a>
-        </div>
-      </div>
-    </section>
+      <!-- BARRA 1 -->
+      <div class="divider-1"></div>
 
-    <!-- BARRA 1 -->
-    <div class="divider-1"></div>
+      <!-- BARRA 2 -->
+      <div class="divider-2"></div>
 
-    <!-- BARRA 2 -->
-    <div class="divider-2"></div>
-
-    <!-- PRODUTS -->
-    <section class="section" id="services">
-      <div class="container grid">
-        <header>
-          <h2 class="title">Produtos</h2>
-          <p class="subtitle">
-            Os produtos
-            <strong>Dicky Store</strong> tem a melhor qualidade para conforto
-            do cliente, com um preço que cabe no seu bolso.
-          </p>
-        </header>
-        <div class="cards grid">
-          <!-- <div class="card bones">
+      <!-- PRODUTS -->
+      <section class="section" id="services">
+        <div class="container grid">
+          <header>
+            <h2 class="title">Produtos</h2>
+            <p class="subtitle">
+              Os produtos
+              <strong>Dicky Store</strong> tem a melhor qualidade para conforto
+              do cliente, com um preço que cabe no seu bolso.
+            </p>
+          </header>
+          <div class="cards grid">
+            <!-- <div class="card bones">
               <i class="icon-icon-cap"></i>
               <h3 class="title">Bonés</h3>
               <p>
@@ -99,23 +104,34 @@
               </p>
             </div> -->
 
-          <div class="card">
-            <div class="images">
-              <img class="newImages" src="./images/M/La Br - M detalhe.jpg" alt="foto camisas dicky" />
+            <div class="card">
+              <div class="images">
+                <img
+                  class="newImages"
+                  src="./images/M/La Br - M detalhe.jpg"
+                  alt="foto camisas dicky"
+                />
 
-              <img src="./images/logo contornada.png" alt="foto promoção dicky" />
+                <img
+                  src="./images/logo contornada.png"
+                  alt="foto promoção dicky"
+                />
 
-              <img class="newImages" src="./images/P/P - G.jpg" alt="foto camisas dicky" />
+                <img
+                  class="newImages"
+                  src="./images/P/P - G.jpg"
+                  alt="foto camisas dicky"
+                />
+              </div>
+
+              <h3 class="title">Camisas</h3>
+              <p>
+                Malhas penteadas com excelente qualidade, durabilidade e
+                acabamento.
+              </p>
             </div>
 
-            <h3 class="title">Camisas</h3>
-            <p>
-              Malhas penteadas com excelente qualidade, durabilidade e
-              acabamento.
-            </p>
-          </div>
-
-          <!-- <div class="card">
+            <!-- <div class="card">
               <i class="icon-icon-colar"></i>
               <h3 class="title">Colares</h3>
               <p>
@@ -123,100 +139,122 @@
                 Commodi quod enim ex omnis ullam odio tempora nobis unde.
               </p>
             </div> -->
+          </div>
+          <a href="./camisas.html" class="button">Veja o catálogo</a>
         </div>
-        <a href="./camisas.html" class="button">Veja o catálogo</a>
-      </div>
-    </section>
+      </section>
 
-    <!-- BARRA 3 -->
-    <div class="divider-1"></div>
+      <!-- BARRA 3 -->
+      <div class="divider-1"></div>
 
-    <!-- ABOUT -->
-    <section class="section" id="about">
-      <div class="container grid">
-        <div class="image">
-          <img src="./images/logo contornada.png" alt="Roupas" loading="lazy" />
-        </div>
+      <!-- ABOUT -->
+      <section class="section" id="about">
+        <div class="container grid">
+          <div class="image">
+            <img
+              src="./images/logo contornada.png"
+              alt="Roupas"
+              loading="lazy"
+            />
+          </div>
 
-        <div class="text">
-          <h2 class="title">Sobre nós</h2>
-          <p>
-            A Dicky Store chegou pra valorizar o estilo MEC. Amigos tiveram a
-            ideia de valorizar a elegância da comunidade, trazendo o estilo e
-            classe até você!
-          </p>
-          <br />
-          <p>
-            “Amigos, amigos, negócios à parte em? É possível fazer a melhor
-            parceria que existe e fazer dar certo do nosso estilo. Tudo
-            depende da maneira que vamos seguir, manter com o respeito,
-            humildade e sempre seguir pelo certo. Além de manter a disciplina
-            e transparência.”
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- BARRA 4 -->
-    <div class="divider-2"></div>
-
-    <!-- CONTATS -->
-    <section class="section" id="contact">
-      <div class="container grid">
-        <div class="text">
-          <h2 class="title">Entre em contato com a gente!</h2>
-          <p>
-            Entre em contato com a Dicky Store, queremos tirar suas dúvidas,
-            ouvir suas críticas e sugestões.
-          </p>
-          <a class="button" id="contato" href="https://wa.me/message/RHB2XG2XXZKBJ1" target="_blank"><i
-              class="icon-whatsapp"></i>Entre em contato</a>
-        </div>
-
-        <div class="links">
-          <ul class="grid">
-            <li class="title">Veja as novidades no nosso instagram</li>
-            <li>
-              <i class="icon-instagram"></i>
-              <a class="contactButton" href="https://instagram.com/usedicky" target="_blank">@usedicky</a>
-            </li>
+          <div class="text">
+            <h2 class="title">Sobre nós</h2>
+            <p>
+              A Dicky Store chegou pra valorizar o estilo MEC. Amigos tiveram a
+              ideia de valorizar a elegância da comunidade, trazendo o estilo e
+              classe até você!
+            </p>
             <br />
-            <li class="title">Dê seu feedback no nosso email</li>
-            <li>
-              <i class="icon-mail"></i><a class="contactButton" href="mailto:dickystore@outlook.com"
-                target="_blank">dickystore@outlook.com</a>
-            </li>
-            <!-- <li><i class="icon-map-pin"></i> Endereço</li> -->
-          </ul>
+            <p>
+              “Amigos, amigos, negócios à parte em? É possível fazer a melhor
+              parceria que existe e fazer dar certo do nosso estilo. Tudo
+              depende da maneira que vamos seguir, manter com o respeito,
+              humildade e sempre seguir pelo certo. Além de manter a disciplina
+              e transparência.”
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- BARRA 4 -->
+      <div class="divider-2"></div>
+
+      <!-- CONTATS -->
+      <section class="section" id="contact">
+        <div class="container grid">
+          <div class="text">
+            <h2 class="title">Entre em contato com a gente!</h2>
+            <p>
+              Entre em contato com a Dicky Store, queremos tirar suas dúvidas,
+              ouvir suas críticas e sugestões.
+            </p>
+            <a
+              class="button"
+              id="contato"
+              href="https://wa.me/message/RHB2XG2XXZKBJ1"
+              target="_blank"
+              ><i class="icon-whatsapp"></i>Entre em contato</a
+            >
+          </div>
+
+          <div class="links">
+            <ul class="grid">
+              <li class="title">Veja as novidades no nosso instagram</li>
+              <li>
+                <i class="icon-instagram"></i>
+                <a
+                  class="contactButton"
+                  href="https://instagram.com/usedicky"
+                  target="_blank"
+                  >@usedicky</a
+                >
+              </li>
+              <br />
+              <li class="title">Dê seu feedback no nosso email</li>
+              <li>
+                <i class="icon-mail"></i
+                ><a
+                  class="contactButton"
+                  href="mailto:dickystore@outlook.com"
+                  target="_blank"
+                  >dickystore@outlook.com</a
+                >
+              </li>
+              <!-- <li><i class="icon-map-pin"></i> Endereço</li> -->
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- BARRA 5 -->
+      <div class="divider-1"></div>
+    </main>
+
+    <footer class="section">
+      <div class="container grid">
+        <div class="brand">
+          <a class="logo logo-alt" href="#home">Dicky <span>Store</span></a>
+          <p>©2021 Dicky Store</p>
+          <p>Todos os direitos reservados.</p>
+        </div>
+
+        <div class="social">
+          <a href="https://instagram.com/usedicky" target="_blank"
+            ><i class="icon-instagram"></i
+          ></a>
+          <a href="https://wa.me/message/RHB2XG2XXZKBJ1" target="_blank"
+            ><i class="icon-whatsapp"></i
+          ></a>
         </div>
       </div>
-    </section>
+    </footer>
 
-    <!-- BARRA 5 -->
-    <div class="divider-1"></div>
-  </main>
+    <a href="#home" class="back-top"><i class="icon-up"></i></a>
 
-  <footer class="section">
-    <div class="container grid">
-      <div class="brand">
-        <a class="logo logo-alt" href="#home">Dicky <span>Store</span></a>
-        <p>©2021 Dicky Store</p>
-        <p>Todos os direitos reservados.</p>
-      </div>
+    <!-- SCROLL-REVEAL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-      <div class="social">
-        <a href="https://instagram.com/usedicky" target="_blank"><i class="icon-instagram"></i></a>
-        <a href="https://wa.me/message/RHB2XG2XXZKBJ1" target="_blank"><i class="icon-whatsapp"></i></a>
-      </div>
-    </div>
-  </footer>
-
-  <a href="#home" class="back-top"><i class="icon-up"></i></a>
-
-  <!-- SCROLL-REVEAL -->
-  <script src="https://unpkg.com/scrollreveal"></script>
-
-  <script src="main.js"></script>
-</body>
-
+    <script src="main.js"></script>
+  </body>
 </html>
